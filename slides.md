@@ -3,7 +3,7 @@
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: './public/bg-img.jpg'
+background: './bg-img.jpg'
 title: '技术沙龙'
 # apply any windi css classes to the current slide
 class: 'text-center'
@@ -170,8 +170,11 @@ son.introduce()
 ```
 
 <v-click>
-<img src="Page1.png" class="w-50vw h-50vh float-right" />
+
+<div style="background-image: url(" Page1.png " ) "  class="w-50vw h-50vh float-right"></div>
+
 </v-click>
+
 <v-click>
 <div class="fixed mt-100 text-sm ml-2">构造函数方法虽然很好用但是会存在浪费内存的问题</div>
 </v-click>
