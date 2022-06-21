@@ -242,7 +242,7 @@ Dad.introduce === Son.introduce --> false 比较的是地址值
 
 <v-click>
 
-<img src="page1.png" class="w-70vw h-50vh float-right" />
+<div class="w-70vw h-50vh float-right" >public下的page1图片</div>
 </v-click>
 
 <v-click>
