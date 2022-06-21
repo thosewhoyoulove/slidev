@@ -1,0 +1,56 @@
+<!--
+ * @Description: 
+ * @Author: 曹俊
+ * @Date: 2022-06-17 14:42:53
+ * @LastEditors: 曹俊
+ * @LastEditTime: 2022-06-19 15:22:49
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // new return 对象
+
+        // function Test(name) {
+        //     this.name = name
+        //     console.log(this)
+        //         // return {
+        //         //     age: 26
+        //         // }
+        //         // return 1
+        // }
+        // const t = new Test('ticknet')
+        // console.log(t)
+
+        // 构造函数
+
+        function Person(name, nation) {
+            this.name = name
+            this.nation = nation
+                // this.introduce = function() {
+                //     console.log(`${this.name}的国籍是${this.nation}`)
+                // }
+        }
+        Person.prototype.introduce = function() {
+            console.log(`${this.name}的国籍是${this.nation}`)
+        }
+        var Dad = new Person("大明", "外国")
+        var Son = new Person("小明", "外国")
+        console.dir(Person)
+            // console.log(Dad.introduce === Son.introduce);
+            // console.log(Person.prototype === Dad.__proto__);
+            // console.dir(Dad)
+            // console.log(Dad.introduce === Son.introduce)
+        console.log(Person === Person.prototype.constructor)
+    </script>
+</body>
+
+</html>
